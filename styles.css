@@ -1,0 +1,119 @@
+body {
+    background-color: #111111ff;
+    color: #878787ff;
+    font-family: "Courier New", monospace;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+    max-height: 6000px;
+    white-space: nowrap;
+    
+    
+    
+}
+
+
+.title {
+    background-color: #111111ff;
+    text-align: center;
+    padding: 30px ;
+}
+
+.title-text {
+    color: #878787ff;
+    font-size: 18px;
+    margin: 0;
+}
+
+.terminal {
+    max-width: 100%;
+    max-height: 100%;
+    width: 80%; /* You can adjust this as needed */
+    min-height: 200px; /* Set a minimum height */
+    background-color: #111111ff;
+    border: 5px solid #878787ff;
+    position: relative;
+    margin: 0 auto; /* Center horizontally */
+    padding: 0px; /* Add some padding for content spacing */
+    box-sizing: border-box; /* Include padding in the width and height calculations */
+    overflow: auto;
+    
+}
+
+.content {
+    padding: 5px;
+    line-height: 0;
+}
+
+.prompt {
+    color: #878787ff; 
+    line-height: 0.25; 
+}
+.prompt:hover {
+    color: #111111ff;
+    background-color: #878787ff; /* White background color */
+    padding: 10px; /* Adjust padding to make it smaller */
+    margin: 0; /* Remove margins */
+}
+
+.highlighter {
+    background-color: #878787ff; /* White background color */
+    padding: 15px; /* Adjust padding to make it smaller */
+    text-align: center;
+    margin: 0; /* Remove margins */
+}
+
+.highlighter-text {
+    color: #111111; /* Black font color */
+    font-size: 16px; /* Adjust font size to make it smaller */
+    margin: 0;
+    padding: 0;
+}
+
+.highlighter2 {
+    background-color: #111111; /* White background color */
+    padding: 15px; /* Adjust padding to make it smaller */
+    text-align: center;
+    margin: 0; /* Remove margins */
+}
+
+.highlighter-text2 {
+    color: #878787ff; /* Black font color */
+    font-size: 16px; /* Adjust font size to make it smaller */
+    margin: 0;
+    padding: 0;
+}
+
+.link {
+    color: #878787ff;
+    text-decoration: none;
+
+}
+
+.link:hover {
+    color: #111111ff;
+    text-decoration: none;
+}
+
+.image-text-container {
+    display: flex;
+    align-items: center; /* Vertically align the image and text */
+}
+
+img {
+    margin-right: 10px; /* Adjust the spacing between the image and text */
+    background-color: #111111ff;
+    border: 5px solid #878787ff;
+}
+
+.centered {
+    text-align: center;
+  }
+  
+  .centered pre {
+    display: inline-block;
+    text-align: left; /* Reset the text alignment within <pre> */
+  }
+  
+
+  

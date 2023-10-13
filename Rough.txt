@@ -1,0 +1,117 @@
+✱ heavy asterisk
+/* CSS HEX */
+--black: #000000ff;
+--battleship-gray: #878787ff;
+--black-2: #000000ff;
+--night: #111111ff;
+--black-3: #000000ff;
+
+
+# Siddhant Bali
+**Computer Science and Design Sophomore @ IIIT Delhi, Class of 2026**  
+*Aspiring Undergraduate Researcher | Tech Enthusiast | Design Advocate*  
+
+## Professional Summary
+Enthusiastic CS and Design student, passionate about technology and design, with a strong commitment to volunteering and leadership. Seeking opportunities to apply and expand my skills in research and creative endeavors.
+
+## Volunteer Experience
+
+### IIIT Delhi Sports Council
+**Head of Videography Core Team | Nexus Knights Esports Division**
+   - Leading the videography team for Nexus Knights Esports.
+   - Current role since July 2023.
+   - Skills: DaVinci Resolve, Adobe Illustrator.
+
+**Core Team Member | Videography | Nexus Knights Esports Division**
+   - Contributing to the videography team for Nexus Knights Esports.
+   - Current role since July 2023.
+
+**Videography Operation Team | Nexus Knights Esports Division**
+   - Part of the videography operations team for Nexus Knights Esports.
+   - Current role since July 2023.
+
+### Indraprastha Institute of Information Technology, Delhi (IIITD)
+**Captain of House | B.Tech Induction Committee 2023**
+   - Leading a house in the B.Tech Induction Committee.
+   - Current role since August 2023.
+
+**Mentor | B.Tech Induction Committee 2023**
+   - Mentoring in the B.Tech Induction Committee.
+   - Current role since July 2023.
+   - Skills: Organization, Project Management, Leadership, Effectiveness, Event Planning, Time Management.
+
+### Fresources
+**Technical Team Member**
+   - Full-time role since August 2023.
+
+### Esya IIITD
+**Videography Operations Team | Esya’23**
+   - Part of the videography operations team for Esya’23.
+   - Current role since May 2023.
+   - Skills: Adobe Photoshop, DaVinci Resolve.
+
+### Muse IIITD
+**Graphic Designer**
+   - Full-time role since April 2023.
+   - Skills: Adobe Photoshop, Adobe Illustrator.
+
+### Philosophy Society of IIITD
+**Member**
+   - Member of the Philosophy Society of IIITD.
+   - Current role since April 2023.
+   - Skills: Adobe Photoshop.
+
+### Odyssey IIITD
+**Volunteer**
+   - Volunteered with Odyssey IIITD in January 2023.
+   - Skills: Adobe Photoshop.
+
+### DesignHub IIITD
+**Game Design Division**
+
+### NSS IIIT Delhi
+**Creatives Team Member**
+
+### Nexus Knights BGMI Tournament
+   - [View on Instagram](https://www.instagram.com/reel/CvKkKRTpNmN/?igshid=MzRlODBiNWFlZA%3D%3D)
+   - Successfully organized a BGMI tournament with Nexus Knights Esports.
+   - Headed the Videography Core Team, capturing event highlights.
+   - Date: July 2023 onwards.
+
+### Esya’23 Gaming Event
+   - [View on Instagram](https://www.instagram.com/reel/CueTreYJcLY/?igshid=MzRlODBiNWFlZA%3D%3D)
+   - Part of Videography Operations Team at Esya’23 technical event.
+   - Contributed to capturing gaming-related content.
+   - Date: From May 2023.
+
+
+Aspiring Undergrad Researcher | Tech Enthusiast | Design Advocate
+
+Siddhant Bali, an aspiring tech entrepreneur, is an Undergraduate Research Scholar at IIIT Delhi, currently pursuing a B.Tech in Computer Science Engineering with a focus on design (CSD).With a graduation set for 2026, Siddhant's journey embodies a fusion of technology, design, and entrepreneurship. His passion for computer science, mathematics, hacking, and Human-Centered Design drives his academic pursuits, while his proficiency in Animation,illustrations,photo and video editing adds a creative edge.Excelling in college activities and event management, Siddhant's entrepreneurial spirit propels him into innovative ventures. Connect on LinkedIn or reach out at siddhant22496@iiitd.ac.in for more info.
+
+
+    <div class="centered">
+        <pre>
+baliking@baliking-ASUS-TUF-Gaming-F15-FX507ZE-FX577ZE:~$ neofetch
+            ...-:::::-...                 baliking@baliking-ASUS-TUF-Gaming-F1 
+         .-MMMMMMMMMMMMMMM-.              ------------------------------------ 
+     .-MMMM`..-:::::::-..`MMMM-.          OS: Linux Mint 21.2 x86_64 
+   .:MMMM.:MMMMMMMMMMMMMMM:.MMMM:.        Host: ASUS TUF Gaming F15 FX507ZE_FX 
+  -MMM-M---MMMMMMMMMMMMMMMMMMM.MMM-       Kernel: 5.15.0-86-generic 
+`:MMM:MM`  :MMMM:....::-...-MMMM:MMM:`    Uptime: 5 hours, 38 mins 
+:MMM:MMM`  :MM:`  ``    ``  `:MMM:MMM:    Packages: 2416 (dpkg), 18 (flatpak) 
+.MMM.MMMM`  :MM.  -MM.  .MM-  `MMMM.MMM.   Shell: bash 5.1.16 
+:MMM:MMMM`  :MM.  -MM-  .MM:  `MMMM-MMM:   Resolution: 1920x1080 
+:MMM:MMMM`  :MM.  -MM-  .MM:  `MMMM:MMM:   DE: Cinnamon 5.8.4 
+:MMM:MMMM`  :MM.  -MM-  .MM:  `MMMM-MMM:   WM: Mutter (Muffin) 
+.MMM.MMMM`  :MM:--:MM:--:MM:  `MMMM.MMM.   WM Theme: Mint-Y-Dark-Red (Mint-Y) 
+:MMM:MMM-  `-MMMMMMMMMMMM-`  -MMM-MMM:    Theme: Mint-Y-Dark-Red [GTK2/3] 
+ :MMM:MMM:`                `:MMM:MMM:     Icons: Yaru-red-dark [GTK2/3] 
+  .MMM.MMMM:--------------:MMMM.MMM.      Terminal: gnome-terminal 
+    '-MMMM.-MMMMMMMMMMMMMMM-.MMMM-'       CPU: 12th Gen Intel i7-12700H (20) @ 
+      '.-MMMM``--:::::--``MMMM-.'         GPU: NVIDIA GeForce RTX 3050 Ti Mobi 
+           '-MMMMMMMMMMMMM-'              GPU: Intel Alder Lake-P 
+              ``-:::::-``                 Memory: 3629MiB / 15608MiB            
+        </pre>
+                </div>
+    <script src="cursor.js"></script>
