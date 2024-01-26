@@ -16,12 +16,13 @@ body {
 .title {
     background-color: #111111ff;
     text-align: center;
-    padding: 30px ;
+    font-size: 15px;
+    padding: 10px ;
 }
 
 .title-text {
     color: #878787ff;
-    font-size: 18px;
+    font-size: 15px;
     margin: 0;
 }
 
