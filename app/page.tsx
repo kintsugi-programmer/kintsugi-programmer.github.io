@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import Image from "next/image";
 
 /* ───────────────────────────── DATA ────────────────────────────── */
 
@@ -16,7 +17,7 @@ const SOCIAL = [
   },
   {
     label: "LinkedIn",
-    href: "https://www.linkedin.com/in/kintsugi-programmer/",
+    href: "https://www.linkedin.com/in/siddhantbali",
     icon: (
       <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
         <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
@@ -26,17 +27,19 @@ const SOCIAL = [
     ),
   },
   {
-    label: "Behance",
-    href: "https://www.behance.net/balibhai",
+    label: "sbali.tech",
+    href: "https://sbali.tech",
     icon: (
-      <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
-        <path d="M22 7h-7V5h7v2zm1.726 10c-.442 1.297-2.029 3-5.101 3-3.074 0-5.564-1.729-5.564-5.675 0-3.91 2.325-5.92 5.466-5.92 3.082 0 4.964 1.782 5.375 4.426.078.506.109 1.188.095 2.14H15.97c.13 3.211 3.483 3.312 4.588 2.029H23.726zm-7.183-7.979c-2.504 0-2.896 2.485-2.896 2.985h5.612c-.085-2.113-1.016-2.985-2.716-2.985zM5.027 11.25c1.593 0 2.518-.8 2.518-2.246 0-1.461-.929-2.272-2.477-2.272H2v4.518h3.027zm-.165 5.5H2v-4.732h3.014c1.979 0 2.991.84 2.991 2.366 0 1.738-1.063 2.366-3.143 2.366zM0 21h7.021c3.741 0 5.564-2.053 5.564-4.853 0-2.051-1.127-3.348-2.969-3.733v-.045c1.466-.47 2.258-1.621 2.258-3.167 0-2.456-1.729-4.202-5.027-4.202H0V21z" />
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <circle cx="12" cy="12" r="10" />
+        <line x1="2" y1="12" x2="22" y2="12" />
+        <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
       </svg>
     ),
   },
   {
     label: "Blog",
-    href: "https://kintsugicodes.hashnode.dev/",
+    href: "https://www.linkedin.com/newsletters/coding-is-meditation-7435057733537722368/",
     icon: (
       <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
         <path d="M12 20h9" />
@@ -55,7 +58,7 @@ const SOCIAL = [
   },
   {
     label: "CV / Résumé",
-    href: "https://drive.google.com/file/d/1G90Atfat8fqvLyHOguBvBk-PKhSQ1dbj/view?usp=sharing",
+    href: "https://drive.google.com/file/d/1yscf8O8ERbVmCnqiKwkJJrBYZ3do-Sor/view",
     icon: (
       <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
         <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
@@ -70,61 +73,61 @@ const SOCIAL = [
 
 const EXPERIENCE = [
   {
-    period: "Mar 2025–",
-    title: "Web Dev Intern",
-    org: "Institute Innovation Council, IIIT Delhi",
-    desc: "Developed responsive website features and full-stack architecture. Built cloud deployment pipelines and deployed applications to Linux servers.",
+    period: "Jan 2025 – Dec 2025",
+    title: "Undergraduate Researcher",
+    org: "MI Lab, IIIT Delhi (in collaboration with ICMR & AIIMS New Delhi)",
+    link: "https://drive.google.com/file/d/1xWXXTdRHHHUULKrngQsqZNJ4AdFiQBNE/view",
+    linkLabel: "Research Presentation",
+    desc: "Built FMT Hub, a cloud-based RBAC clinical data platform for access-controlled submissions, video uploads, multi-center validation across 6 hospitals, reducing bias and eliminating manual adjudication. Implemented anonymized center identifiers and automated email workflows using Google AppSheet to securely manage 800+ patient records.",
   },
   {
-    period: "Jan 2025–",
-    title: "Research Web Developer",
-    org: "FMT Centre of Excellence · AIIMS + ICMR + IIIT Delhi",
-    desc: "Building a centralized web platform for clinical data and visualization across 1000+ patients and 10+ hospitals. Guided by Prof. Dr. Tarini Shankar Ghosh & Dr. Vineet Ahuja (Former Director, AIIMS Delhi).",
+    period: "Apr 2024 – Jul 2025",
+    title: "Web Developer & Part-Time Intern",
+    org: "IIIT Delhi — Multiple Departments",
+    subItems: [
+      { title: "IIC", link: "https://ecell.iiitd.edu.in/", expLetter: "https://drive.google.com/file/d/15J8h-KHd-D_vZ8FEkdgwQNcVEaaCNLBa/view", period: "Mar 2025 – Jul 2025" },
+      { title: "Design Summer School", link: "https://dss2025.iiitd.edu.in/", expLetter: "https://drive.google.com/file/d/1ZBmdpn35tOQ6O-hA4DlZQFGS6P-6t2TZ/view", period: "Mar 2025 – Apr 2025" },
+      { title: "1Pixel Design Conf.", link: "https://1pxdesignconf.iiitd.edu.in/", expLetter: "https://drive.google.com/file/d/1ZBmdpn35tOQ6O-hA4DlZQFGS6P-6t2TZ/view", period: "Dec 2024 – Jan 2025" },
+      { title: "PerSIsst Lab", link: "https://persisst.iiitd.edu.in/", expLetter: "https://drive.google.com/file/d/1uVUchMiUUwhLph9rYhSjSyHx-VntRaQw/view", period: "Aug 2024 – Dec 2024" },
+      { title: "HCD Dept.", link: "https://hcd.iiitd.ac.in/", expLetter: "https://drive.google.com/file/d/1ZBmdpn35tOQ6O-hA4DlZQFGS6P-6t2TZ/view", period: "Apr 2024 – Jul 2024" },
+    ],
+    desc: "Led end-to-end architecture and cloud deployment of 5 production-grade platforms, designing reusable component systems and structured full-stack infrastructure for institutional deployments. Optimized performance and SEO using Lighthouse-driven improvements (90+ scores), dynamic routing, asset optimization, and responsive design for cross-device reliability. Executed hardened backend services and engineered shell-based deployment automation scripts to standardize server updates and reduce manual configuration errors.",
   },
   {
-    period: "Mar–Apr 2025",
-    title: "Web Development Intern",
-    org: "HCD Department, IIIT Delhi",
-    desc: "Built the official website for Design Summer School 2025 — a hands-on workshop series in Human-Centered AI, AR/VR, and interaction design.",
-  },
-  {
-    period: "Nov 2024–Jan 2025",
+    period: "Nov 2024 – Jan 2025",
     title: "Web Developer",
-    org: "C.S. Bhatiya & Associates (CA Firm), Pune",
-    desc: "High-performance websites using Next.js + Tailwind CSS on Apache/Oracle Linux with SSL integration and SEO optimization. Guided by CA Chintan S. Bhatiya.",
-  },
-  {
-    period: "Dec 2023–Jan 2025",
-    title: "Lead Web Developer",
-    org: "1Pixel Design Conference 2025, IIIT Delhi",
-    desc: "Designed and developed the website for North India's largest student-led design event — cross-device compatibility, SEO, and high-traffic delivery.",
-  },
-  {
-    period: "Aug–Dec 2024",
-    title: "Web Developer",
-    org: "PerSIsst Lab, IIIT Delhi",
-    desc: "Built and maintained the official lab website using Next.js, TypeScript, and Tailwind CSS. Worked under Dr. Pragma Kar.",
-  },
-  {
-    period: "Apr 2023–Jul 2024",
-    title: "Part-Time Intern",
-    org: "HCD Department, IIIT Delhi",
-    desc: "Contributed to HCD@IIITD's official website and major departmental web projects. Under the mentorship of Binu Ann Joseph.",
+    org: "C S Bhatiya & Associates",
+    link: "https://www.csbhatiya.com",
+    expLetter: "https://drive.google.com/file/d/1ERZEwunqZLcGdk9Fz-A9g0KW0qIyfU5l/view",
+    desc: "Led development and deployment of a high-performance, SEO-optimized website, achieving 90+ Lighthouse scores through performance optimization, DNS configuration, mail service integration and security patching.",
   },
 ];
 
 const PROJECTS = [
   {
-    title: "DecoyNet — LoFi Honeypots for Web Security",
-    desc: "Honeypot network with BreachBot — a system for logging and analyzing unauthorized intrusion attempts.",
-    tags: ["Security", "Python", "Networking"],
-    link: "https://github.com/kintsugi-programmer/DecoyNet",
+    title: "TelemetryTradeAI",
+    desc: "AI-powered crypto intelligence platform featuring a streaming RAG chatbot, real-time market data integration and OCR-based portfolio analysis.",
+    tags: ["Bun", "Next.js", "TailwindCSS", "ShadCN", "Clerk", "Groq AI", "CoinGecko API", "Tesseract.js"],
+    link: "https://telemetry.sbali.tech/",
+    links: [
+      { label: "Production", href: "https://telemetry.sbali.tech/" },
+      { label: "Source Code", href: "https://github.com/kintsugi-programmer/TelemetryTrade" },
+      { label: "Demo Video", href: "https://www.youtube.com/watch?v=Va5wmX31pqA" },
+      { label: "Press Coverage", href: "https://www.youtube.com/watch?v=SA6GP3SVA-0" },
+    ],
+    recognition: ["IIITD", "IGDTUW", "Mercedes Benz"],
+    award: "Top 100 Products in India under Delhi SYF 2026 · Awarded INR 1,00,000 by Hon'ble Chief Minister of Delhi",
   },
   {
-    title: "LifeLore — A Wisdom Social Network",
-    desc: "Platform for sharing life lessons and knowledge across generations. Full-stack Next.js application.",
-    tags: ["Next.js", "PostgreSQL", "TypeScript"],
-    link: "https://lifelore.vercel.app/",
+    title: "LifeLore",
+    desc: "Community-driven platform for user-generated posts, discussions, and tag-based content discovery with secure authentication and modular UI systems.",
+    tags: ["Next.js", "MongoDB", "NextAuth", "TailwindCSS", "ShadCN"],
+    link: "https://lifelore.sbali.tech/",
+    links: [
+      { label: "Production", href: "https://lifelore.sbali.tech/" },
+      { label: "Source Code", href: "https://github.com/kintsugi-programmer/lifelore" },
+      { label: "Demo Video", href: "https://www.youtube.com/watch?v=11zYdMHxLr8" },
+    ],
   },
   {
     title: "कर्मOS — Distraction-Free LMS Platform",
@@ -133,16 +136,16 @@ const PROJECTS = [
     link: "https://karmos.vercel.app/",
   },
   {
+    title: "DecoyNet — LoFi Honeypots for Web Security",
+    desc: "Honeypot network with BreachBot — a system for logging and analyzing unauthorized intrusion attempts.",
+    tags: ["Security", "Python", "Networking"],
+    link: "https://github.com/kintsugi-programmer/DecoyNet",
+  },
+  {
     title: "QalaKriti — E-Commerce Platform",
     desc: "Full-stack e-commerce platform with MySQL advanced database management and relational schema design.",
     tags: ["MySQL", "Full Stack", "DBMS"],
     link: "https://github.com/kintsugi-programmer/Qalakriti-Ecommerce-DBMS",
-  },
-  {
-    title: "DigitalDrz — UI/UX Component Catalog",
-    desc: "Curated catalog of world-class UI/UX components for clients and internal design systems.",
-    tags: ["Design Systems", "React", "Figma"],
-    link: "https://digitaldrz.vercel.app/",
   },
   {
     title: "Yarnsugi — Dev Utilities",
@@ -218,9 +221,11 @@ const WRITING = [
 
 const CLIENTS = [
   { name: "AIIMS Delhi & ICMR", href: "https://www.aiims.edu/" },
+  { name: "MI Lab, IIIT Delhi", href: "https://iiitd.ac.in" },
   { name: "IIIT Delhi — HCD Dept.", href: "https://hcd.iiitd.ac.in/" },
   { name: "1Px Design Conference", href: "https://1pxdesignconf.iiitd.edu.in/" },
   { name: "PerSIsst Lab, IIITD", href: "https://persisst.iiitd.edu.in/" },
+  { name: "IIC, IIIT Delhi", href: "https://ecell.iiitd.edu.in/" },
   { name: "C.S. Bhatiya & Associates", href: "https://csbhatiya.com/" },
   { name: "Design Summer School 2025", href: "https://dss2025.iiitd.edu.in/" },
 ];
@@ -228,9 +233,9 @@ const CLIENTS = [
 const NAV = [
   { label: "About", href: "#about" },
   { label: "Experience", href: "#experience" },
+  { label: "Skills", href: "#skills" },
   { label: "Projects", href: "#projects" },
-  { label: "Videos", href: "#videos" },
-  { label: "Writing", href: "#writing" },
+  { label: "Newsletter", href: "#newsletter" },
   { label: "Connect", href: "#connect" },
 ];
 
@@ -372,7 +377,7 @@ export default function HomePage() {
                 marginBottom: "0.75rem",
               }}
             >
-              IIIT Delhi · CSD B.Tech · Class of 2026
+              IIIT Delhi · CSD B.Tech · Dean's List Awardee · Class of 2026
             </p>
 
             <h1
@@ -398,7 +403,7 @@ export default function HomePage() {
                 lineHeight: 1.5,
               }}
             >
-              builder of platforms · intersection of systems & design · kintsugi programmer.
+              builder of platforms · full-stack engineer · kintsugi programmer.
             </p>
 
             <p style={{ fontSize: "0.9375rem", color: "var(--text-secondary)", lineHeight: 1.8, marginBottom: "0.9rem", maxWidth: 540 }}>
@@ -412,7 +417,7 @@ export default function HomePage() {
               <a href="https://www.aiims.edu/" target="_blank" rel="noopener noreferrer" className="underline-hover">AIIMS Delhi</a>,{" "}
               <a href="https://hcd.iiitd.ac.in/" target="_blank" rel="noopener noreferrer" className="underline-hover">IIIT Delhi's HCD Dept.</a>, and several
               research labs — shipping production-grade web infrastructure, design systems, and CLI tools.
-              I believe in software that's both rigorous and considered.
+              Recognized by IIITD, IGDTUW, and Mercedes Benz at Delhi SYF 2026.
             </p>
 
             {/* Social buttons */}
@@ -433,32 +438,25 @@ export default function HomePage() {
             </div>
           </div>
 
-          {/* Avatar placeholder — monogram */}
+          {/* Profile picture */}
           <div
             style={{
               width: 112,
               height: 112,
               borderRadius: "50%",
-              background: "var(--accent-light)",
+              overflow: "hidden",
               border: "2px solid var(--border)",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
               flexShrink: 0,
               marginTop: "1.5rem",
             }}
           >
-            <span
-              style={{
-                fontFamily: "'DM Serif Display', serif",
-                fontStyle: "italic",
-                fontSize: "2rem",
-                color: "var(--accent)",
-                letterSpacing: "-0.05em",
-              }}
-            >
-              SB
-            </span>
+            <Image
+              src="/profile.webp"
+              alt="Siddhant Bali"
+              width={112}
+              height={112}
+              style={{ objectFit: "cover", width: "100%", height: "100%" }}
+            />
           </div>
         </section>
 
@@ -483,12 +481,79 @@ export default function HomePage() {
               <div key={i} className="exp-row">
                 <div className="exp-period">{exp.period}</div>
                 <div className="exp-body">
-                  <div className="exp-title">{exp.title}</div>
-                  <div className="exp-org">{exp.org}</div>
+                  <div className="exp-title">
+                    {exp.title}
+                    {exp.link && (
+                      <a href={exp.link} target="_blank" rel="noopener noreferrer" style={{ fontSize: "0.8rem", color: "var(--link)", marginLeft: "0.5rem" }}>
+                        <ExternalIcon />
+                      </a>
+                    )}
+                  </div>
+                  <div className="exp-org">
+                    {exp.org}
+                    {exp.link && (
+                      <a href={exp.link} target="_blank" rel="noopener noreferrer" style={{ fontSize: "0.75rem", color: "var(--link)", marginLeft: "0.4rem" }}>
+                        <ExternalIcon />
+                      </a>
+                    )}
+                    {exp.expLetter && (
+                      <a href={exp.expLetter} target="_blank" rel="noopener noreferrer" style={{ fontSize: "0.75rem", color: "var(--text-muted)", marginLeft: "0.4rem" }}>
+                        Exp. Letter
+                      </a>
+                    )}
+                  </div>
+                  {exp.subItems && (
+                    <div style={{ marginBottom: "0.5rem", fontSize: "0.8rem" }}>
+                      {exp.subItems.map((sub, j) => (
+                        <div key={j} style={{ display: "flex", alignItems: "center", gap: "0.5rem", marginBottom: "0.25rem" }}>
+                          <span style={{ color: "var(--text-muted)" }}>•</span>
+                          <span>{sub.title}</span>
+                          {sub.link && (
+                            <a href={sub.link} target="_blank" rel="noopener noreferrer" style={{ fontSize: "0.7rem", color: "var(--link)" }}>
+                              Production <ExternalIcon />
+                            </a>
+                          )}
+                          {sub.expLetter && (
+                            <a href={sub.expLetter} target="_blank" rel="noopener noreferrer" style={{ fontSize: "0.7rem", color: "var(--text-muted)" }}>
+                              Exp. Letter
+                            </a>
+                          )}
+                          <span style={{ color: "var(--text-muted)" }}>· {sub.period}</span>
+                        </div>
+                      ))}
+                    </div>
+                  )}
                   <div className="exp-desc">{exp.desc}</div>
                 </div>
               </div>
             ))}
+          </div>
+        </SectionWrapper>
+
+        <hr />
+
+        {/* ─── Skills ─── */}
+        <SectionWrapper id="skills">
+          <h2 className="section-heading">Technical Skills</h2>
+          <div style={{ display: "grid", gap: "1rem" }}>
+            <div>
+              <span style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: "0.72rem", color: "var(--text-muted)", textTransform: "uppercase", letterSpacing: "0.06em" }}>Languages</span>
+              <div style={{ display: "flex", flexWrap: "wrap", gap: "0.35rem", marginTop: "0.5rem" }}>
+                {["Rust", "Python", "SQL", "C++", "Bash"].map(t => <span key={t} className="tag">{t}</span>)}
+              </div>
+            </div>
+            <div>
+              <span style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: "0.72rem", color: "var(--text-muted)", textTransform: "uppercase", letterSpacing: "0.06em" }}>Frameworks</span>
+              <div style={{ display: "flex", flexWrap: "wrap", gap: "0.35rem", marginTop: "0.5rem" }}>
+                {["Bun", "Next.js", "React", "Flask", "Material-UI", "FastAPI", "ShadCN", "TailwindCSS"].map(t => <span key={t} className="tag">{t}</span>)}
+              </div>
+            </div>
+            <div>
+              <span style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: "0.72rem", color: "var(--text-muted)", textTransform: "uppercase", letterSpacing: "0.06em" }}>Developer Tools</span>
+              <div style={{ display: "flex", flexWrap: "wrap", gap: "0.35rem", marginTop: "0.5rem" }}>
+                {["Git", "GitHub", "GitLab", "Linux", "Vercel", "Postman", "Google Cloud Platform", "Google AppSheet", "VS Code", "Visual Studio", "PyCharm", "IntelliJ", "Clerk", "MongoDB Atlas", "Supabase"].map(t => <span key={t} className="tag">{t}</span>)}
+              </div>
+            </div>
           </div>
         </SectionWrapper>
 
@@ -515,6 +580,25 @@ export default function HomePage() {
                   </a>
                 </div>
                 <p style={{ fontSize: "0.8125rem", color: "var(--text-secondary)", lineHeight: 1.65, marginBottom: "0.4rem" }}>{p.desc}</p>
+                {p.links && (
+                  <div style={{ display: "flex", flexWrap: "wrap", gap: "0.5rem", marginBottom: "0.4rem" }}>
+                    {p.links.map((l) => (
+                      <a key={l.label} href={l.href} target="_blank" rel="noopener noreferrer" style={{ fontSize: "0.75rem", color: "var(--link)", textDecoration: "none" }}>
+                        {l.label} <ExternalIcon />
+                      </a>
+                    ))}
+                  </div>
+                )}
+                {p.recognition && (
+                  <div style={{ fontSize: "0.75rem", color: "var(--text-muted)", marginBottom: "0.4rem" }}>
+                    Recognized by: {p.recognition.join(" · ")}
+                  </div>
+                )}
+                {p.award && (
+                  <div style={{ fontSize: "0.75rem", color: "var(--accent)", fontWeight: 500, marginBottom: "0.4rem" }}>
+                    {p.award}
+                  </div>
+                )}
                 <div style={{ display: "flex", flexWrap: "wrap", gap: "0.35rem" }}>
                   {p.tags.map((t) => (
                     <span key={t} className="tag">{t}</span>
@@ -576,6 +660,34 @@ export default function HomePage() {
 
         <hr />
 
+        {/* ─── Newsletter ─── */}
+        <SectionWrapper id="newsletter">
+          <h2 className="section-heading">Siddhant's Newsletter</h2>
+          <p className="section-sub" style={{ fontSize: "1rem", color: "var(--text-primary)", fontWeight: 500, marginBottom: "0.75rem" }}>
+            Read by Thousands of Engineers
+          </p>
+          <p className="section-sub">
+            Weekly essays on real-world system design, distributed systems, or a deep dive into some super-clever algorithm. A newsletter to help software engineers become better engineers and grow faster in their careers.
+          </p>
+          <div style={{ marginTop: "1.5rem" }}>
+            <a
+              href="https://www.linkedin.com/build-relation/newsletter-follow?entityUrn=7435057733537722368"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="social-btn"
+              style={{ padding: "0.75rem 1.5rem", fontSize: "0.9375rem" }}
+            >
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                <polyline points="22,6 12,13 2,6" />
+              </svg>
+              Subscribe to Newsletter
+            </a>
+          </div>
+        </SectionWrapper>
+
+        <hr />
+
         {/* ─── Connect ─── */}
         <SectionWrapper id="connect">
           <h2 className="section-heading">Connect</h2>
@@ -587,10 +699,27 @@ export default function HomePage() {
                 <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7" />
                 <rect x="2" y="4" width="20" height="16" rx="2" />
               </svg>
-              <a href="mailto:siddhant22496@iiitd.ac.in" className="underline-hover" style={{ fontSize: "0.9rem", color: "var(--text-secondary)" }}>
-                siddhant22496@iiitd.ac.in
+              <a href="mailto:siddhant.bali.work@gmail.com" className="underline-hover" style={{ fontSize: "0.9rem", color: "var(--text-secondary)" }}>
+                siddhant.bali.work@gmail.com
               </a>
-              <span style={{ color: "var(--text-muted)", fontSize: "0.75rem" }}>· IIIT Delhi</span>
+            </div>
+            <div style={{ display: "flex", alignItems: "center", gap: "0.75rem" }}>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--text-muted)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+              </svg>
+              <a href="tel:+918076218828" className="underline-hover" style={{ fontSize: "0.9rem", color: "var(--text-secondary)" }}>
+                +91 80762 18828
+              </a>
+            </div>
+            <div style={{ display: "flex", alignItems: "center", gap: "0.75rem" }}>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--text-muted)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <circle cx="12" cy="12" r="10" />
+                <line x1="2" y1="12" x2="22" y2="12" />
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+              </svg>
+              <a href="https://sbali.tech" target="_blank" rel="noopener noreferrer" className="underline-hover" style={{ fontSize: "0.9rem", color: "var(--text-secondary)" }}>
+                sbali.tech
+              </a>
             </div>
             <div style={{ display: "flex", alignItems: "center", gap: "0.75rem" }}>
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--text-muted)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -632,8 +761,8 @@ export default function HomePage() {
           </span>
           <div style={{ display: "flex", gap: "1.25rem" }}>
             <a href="https://github.com/kintsugi-programmer" target="_blank" rel="noopener noreferrer" className="nav-link">GitHub</a>
-            <a href="https://www.linkedin.com/in/kintsugi-programmer/" target="_blank" rel="noopener noreferrer" className="nav-link">LinkedIn</a>
-            <a href="https://kintsugicodes.hashnode.dev/" target="_blank" rel="noopener noreferrer" className="nav-link">Blog</a>
+            <a href="https://www.linkedin.com/in/siddhantbali" target="_blank" rel="noopener noreferrer" className="nav-link">LinkedIn</a>
+            <a href="https://sbali.tech" target="_blank" rel="noopener noreferrer" className="nav-link">sbali.tech</a>
           </div>
         </footer>
       </main>
