@@ -256,8 +256,8 @@ const CLIENTS = [
 
 const NAV = [
   { label: "About", href: "#about" },
-  { label: "Articles", href: "#articles" },
   { label: "Videos", href: "#videos" },
+  { label: "Articles", href: "#articles" },
   { label: "Experience", href: "#experience" },
   { label: "Skills", href: "#skills" },
   { label: "Projects", href: "#projects" },
@@ -522,6 +522,26 @@ export default function HomePage() {
 
         <hr />
 
+        {/* ─── Videos ─── */}
+        <SectionWrapper id="videos">
+          <h2 className="section-heading">Videos</h2>
+          <p className="section-sub">Unfiltered thoughts on software engineering and career.</p>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", gap: "1.5rem" }}>
+            {VIDEOS.map((v, i) => (
+              <div key={i} className="video-card">
+                <div style={{ position: "relative", paddingBottom: "56.25%", height: 0, overflow: "hidden" }}>
+                  <iframe src={v.src} title={v.title} frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%" }}></iframe>
+                </div>
+                <div style={{ padding: "1rem" }}>
+                  <h3 style={{ fontSize: "0.9375rem", color: "var(--text-primary)", fontWeight: 500, lineHeight: 1.4 }}>{v.title}</h3>
+                </div>
+              </div>
+            ))}
+          </div>
+        </SectionWrapper>
+
+        <hr />
+
         {/* ─── Articles ─── */}
         <SectionWrapper id="articles">
           <h2 className="section-heading">Articles</h2>
@@ -576,26 +596,6 @@ export default function HomePage() {
                   </svg>
                 </span>
               </a>
-            ))}
-          </div>
-        </SectionWrapper>
-
-        <hr />
-
-        {/* ─── Videos ─── */}
-        <SectionWrapper id="videos">
-          <h2 className="section-heading">Videos</h2>
-          <p className="section-sub">Unfiltered thoughts on software engineering and career.</p>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", gap: "1.5rem" }}>
-            {VIDEOS.map((v, i) => (
-              <div key={i} className="video-card">
-                <div style={{ position: "relative", paddingBottom: "56.25%", height: 0, overflow: "hidden" }}>
-                  <iframe src={v.src} title={v.title} frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%" }}></iframe>
-                </div>
-                <div style={{ padding: "1rem" }}>
-                  <h3 style={{ fontSize: "0.9375rem", color: "var(--text-primary)", fontWeight: 500, lineHeight: 1.4 }}>{v.title}</h3>
-                </div>
-              </div>
             ))}
           </div>
         </SectionWrapper>
