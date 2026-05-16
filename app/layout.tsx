@@ -1,10 +1,32 @@
 import type { Metadata } from "next";
+import { DM_Serif_Display, Inter, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
+
+const dmSerifDisplay = DM_Serif_Display({
+  weight: ["400"],
+  subsets: ["latin"],
+  variable: "--font-serif",
+  display: "swap",
+});
+
+const inter = Inter({
+  weight: ["300", "400", "500", "600"],
+  subsets: ["latin"],
+  variable: "--font-inter",
+  display: "swap",
+});
+
+const jetbrainsMono = JetBrains_Mono({
+  weight: ["400", "500"],
+  subsets: ["latin"],
+  variable: "--font-mono",
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   title: "Siddhant Bali — Kintsugi Programmer",
   description:
-    "Computer Science & Design Scholar at IIIT Delhi. Builder of web platforms, researcher in HCI & distributed systems, and open-source enthusiast.",
+    "Chief Product Engineer @ Metagates Innovation. Building HealthTech SaaS, ABDM-integrated platforms, and clinical systems. IIIT Delhi CSD'26, Dean's List.",
   keywords: [
     "Siddhant Bali",
     "kintsugi-programmer",
@@ -19,7 +41,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Siddhant Bali — Kintsugi Programmer",
     description:
-      "Computer Science & Design Scholar at IIIT Delhi. Builder of web platforms, researcher in HCI & distributed systems.",
+      "Chief Product Engineer @ Metagates Innovation. Building HealthTech SaaS, ABDM-integrated platforms, and clinical systems. IIIT Delhi CSD'26.",
     url: "https://kintsugi-programmer.github.io",
     siteName: "Siddhant Bali",
     locale: "en_US",
@@ -28,7 +50,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary",
     title: "Siddhant Bali — Kintsugi Programmer",
-    description: "CS & Design Scholar @ IIIT Delhi · Builder · Researcher",
+    description: "Chief Product Engineer · HealthTech · IIIT Delhi CSD'26",
   },
   robots: { index: true, follow: true },
 };
@@ -39,11 +61,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-      </head>
+    <html lang="en" className={`${dmSerifDisplay.variable} ${inter.variable} ${jetbrainsMono.variable}`}>
       <body>{children}</body>
     </html>
   );

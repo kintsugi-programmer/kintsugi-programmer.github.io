@@ -10,7 +10,7 @@ const SOCIAL = [
     label: "GitHub",
     href: "https://github.com/kintsugi-programmer",
     icon: (
-      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
         <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
       </svg>
     ),
@@ -19,7 +19,7 @@ const SOCIAL = [
     label: "LinkedIn",
     href: "https://www.linkedin.com/in/siddhantbali",
     icon: (
-      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
         <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
         <rect x="2" y="9" width="4" height="12" />
         <circle cx="4" cy="4" r="2" />
@@ -30,7 +30,7 @@ const SOCIAL = [
     label: "sbali.tech",
     href: "https://sbali.tech",
     icon: (
-      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
         <circle cx="12" cy="12" r="10" />
         <line x1="2" y1="12" x2="22" y2="12" />
         <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
@@ -41,7 +41,7 @@ const SOCIAL = [
     label: "Blog",
     href: "https://www.linkedin.com/newsletters/coding-is-meditation-7435057733537722368/",
     icon: (
-      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
         <path d="M12 20h9" />
         <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z" />
       </svg>
@@ -51,7 +51,7 @@ const SOCIAL = [
     label: "Codeforces",
     href: "https://codeforces.com/profile/kintsugi-programmer",
     icon: (
-      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
         <polyline points="22 12 18 12 15 21 9 3 6 12 2 12" />
       </svg>
     ),
@@ -60,7 +60,7 @@ const SOCIAL = [
     label: "CV / Résumé",
     href: "https://drive.google.com/file/d/1yscf8O8ERbVmCnqiKwkJJrBYZ3do-Sor/view",
     icon: (
-      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
         <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
         <polyline points="14 2 14 8 20 8" />
         <line x1="16" y1="13" x2="8" y2="13" />
@@ -79,6 +79,23 @@ const EXPERIENCE = [
     location: "South Delhi, Delhi, Full-time",
     link: "https://easeclaim.com",
     desc: "Leading product engineering for Healthcare Information Technology (HIT) solutions. Architecting enterprise-grade platforms and driving full-stack product development from design through deployment.",
+  },
+  {
+    period: "Nov 2025 – Feb 2026",
+    title: "Founder",
+    org: "TelemetryTradeAI · Self-employed",
+    location: "Remote",
+    link: "https://telemetry.sbali.tech",
+    links: [
+      { label: "Launch Video", href: "https://www.youtube.com/watch?v=Va5wmX31pqA" },
+      { label: "Press Coverage", href: "https://www.youtube.com/watch?v=SA6GP3SVA-0&t=567s" },
+    ],
+    recognition: [
+      { label: "IIITD", href: "https://www.linkedin.com/posts/iiitdelhi-studentstartup-delhistartupyuva-ugcPost-7421215782153666560-9ZeC/" },
+      { label: "IGDTUW", href: "https://www.linkedin.com/posts/siddhantbali_esummit2026-igdtuw-startuplife-ugcPost-7425245221057150976-Z-dJ/" },
+      { label: "Mercedes Benz", href: "https://www.linkedin.com/posts/siddhantbali_startupecosystem-investments-equity-ugcPost-7428227947649642496-DSw2/" },
+    ],
+    desc: "Built TelemetryTradeAI, an AI-powered crypto intelligence platform with streaming RAG chatbot, real-time market data integration, and OCR-based portfolio analysis. Recognized as Top 100 Products in India under Delhi SYF 2026. Awarded INR 1,00,000.",
   },
   {
     period: "Jan 2025 – Dec 2025",
@@ -135,9 +152,13 @@ const PROJECTS = [
       { label: "Production", href: "https://telemetry.sbali.tech/" },
       { label: "Source Code", href: "https://github.com/kintsugi-programmer/TelemetryTrade" },
       { label: "Demo Video", href: "https://www.youtube.com/watch?v=Va5wmX31pqA" },
-      { label: "Press Coverage", href: "https://www.youtube.com/watch?v=SA6GP3SVA-0" },
+      { label: "Press Coverage", href: "https://www.youtube.com/watch?v=SA6GP3SVA-0&t=567s" },
     ],
-    recognition: ["IIITD", "IGDTUW", "Mercedes Benz"],
+    recognition: [
+      { label: "IIITD", href: "https://www.linkedin.com/posts/iiitdelhi-studentstartup-delhistartupyuva-ugcPost-7421215782153666560-9ZeC/" },
+      { label: "IGDTUW", href: "https://www.linkedin.com/posts/siddhantbali_esummit2026-igdtuw-startuplife-ugcPost-7425245221057150976-Z-dJ/" },
+      { label: "Mercedes Benz", href: "https://www.linkedin.com/posts/siddhantbali_startupecosystem-investments-equity-ugcPost-7428227947649642496-DSw2/" },
+    ],
     award: "Top 100 Products in India under Delhi SYF 2026 · Awarded INR 1,00,000 by Hon'ble Chief Minister of Delhi",
   },
   {
@@ -190,6 +211,18 @@ const VIDEOS = [
     title: "Most Engineers Don’t Actually Love Coding | Unfiltered | Hinglish",
     src: "https://www.youtube.com/embed/NamdV-85tvw?feature=oembed",
   },
+  {
+    title: "Press Coverage of TelemetryTradeAI, Recognized as Top 100 Products in India under Delhi SYF 2026",
+    src: "https://www.youtube.com/embed/SA6GP3SVA-0?si=IxfP13bJFGe_EBPp",
+  },
+  {
+    title: "LifeLore Launch – Share Your Life's Wisdom with the World",
+    src: "https://www.youtube.com/embed/11zYdMHxLr8?si=lM1CNSEB0j5-YRuS",
+  },
+  {
+    title: "TelemetryTradeAI Launch and Award",
+    src: "https://www.youtube.com/embed/Va5wmX31pqA?si=RuIq2_Gg5hmGQh4v",
+  },
 ];
 
 const WRITING = [
@@ -236,7 +269,7 @@ const NAV = [
 
 function ExternalIcon() {
   return (
-    <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ display: "inline", marginLeft: 3 }}>
+    <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" style={{ display: "inline", marginLeft: 3 }}>
       <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
       <polyline points="15 3 21 3 21 9" />
       <line x1="10" y1="14" x2="21" y2="3" />
@@ -257,7 +290,7 @@ function SectionWrapper({ id, children }: { id: string; children: React.ReactNod
     return () => obs.disconnect();
   }, []);
   return (
-    <section id={id} ref={ref} className="section-fade" style={{ paddingTop: "4rem", paddingBottom: "2rem" }}>
+    <section id={id} ref={ref} className="section-fade" style={{ paddingTop: "2.5rem", paddingBottom: "2.5rem", scrollMarginTop: "3.5rem" }}>
       {children}
     </section>
   );
@@ -289,19 +322,19 @@ export default function HomePage() {
       >
         <div style={{ maxWidth: 760, margin: "0 auto", width: "100%", display: "flex", alignItems: "center", justifyContent: "space-between" }}>
           {/* Logo */}
-          <a
-            href="#"
-            style={{
-              fontFamily: "'DM Serif Display', serif",
-              fontSize: "1.0625rem",
-              fontStyle: "italic",
-              color: "var(--text-primary)",
-              textDecoration: "none",
-              letterSpacing: "-0.01em",
-            }}
-          >
-            Siddhant Bali
-          </a>
+            <a
+              href="/"
+              style={{
+                fontFamily: "'DM Serif Display', serif",
+                fontSize: "1.0625rem",
+                fontStyle: "italic",
+                color: "var(--text-primary)",
+                textDecoration: "none",
+                letterSpacing: "-0.01em",
+              }}
+            >
+              Siddhant Bali
+            </a>
 
           {/* Desktop nav */}
           <div style={{ display: "flex", gap: "1.75rem", alignItems: "center" }} className="desktop-nav">
@@ -324,7 +357,7 @@ export default function HomePage() {
               color: "var(--text-primary)",
             }}
           >
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true">
               {menuOpen
                 ? <><path d="M18 6 6 18"/><path d="m6 6 12 12"/></>
                 : <><path d="M4 12h16"/><path d="M4 6h16"/><path d="M4 18h16"/></>
@@ -351,8 +384,9 @@ export default function HomePage() {
         <section
           id="about"
           style={{
-            paddingTop: "4rem",
-            paddingBottom: "2rem",
+            paddingTop: "2.5rem",
+            paddingBottom: "2.5rem",
+            scrollMarginTop: "3.5rem",
           }}
         >
           <div
@@ -457,6 +491,7 @@ export default function HomePage() {
               alt="Siddhant Bali"
               width={112}
               height={112}
+              priority
               style={{ objectFit: "cover", width: "100%", height: "100%" }}
             />
           </div>
@@ -478,13 +513,8 @@ export default function HomePage() {
                 rel="noopener noreferrer"
                 className="entry"
                 style={{
-                  display: "grid",
-                  gap: "0.75rem",
-                  padding: "0.65rem 0.75rem",
-                  borderRadius: "4px",
                   textDecoration: "none",
                   transition: "background 0.2s, box-shadow 0.2s",
-                  marginBottom: "1px",
                 }}
                 onMouseEnter={(e) => {
                   e.currentTarget.style.background = "var(--surface)";
@@ -517,7 +547,7 @@ export default function HomePage() {
                   onMouseLeave={(e) => { e.currentTarget.style.color = "var(--text-primary)"; }}
                 >
                   {w.title}
-                  <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ display: "inline", marginLeft: 4, opacity: 0.4, verticalAlign: "middle" }}>
+                  <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" style={{ display: "inline", marginLeft: 4, opacity: 0.4, verticalAlign: "middle" }}>
                     <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
                     <polyline points="15 3 21 3 21 9" />
                     <line x1="10" y1="14" x2="21" y2="3" />
@@ -551,7 +581,7 @@ export default function HomePage() {
         <hr />
 
         {/* ─── Clients strip ─── */}
-        <div style={{ padding: "1.5rem 0", display: "flex", flexWrap: "wrap", gap: "0.75rem", alignItems: "center" }}>
+        <div id="clients" style={{ padding: "1.5rem 0", display: "flex", flexWrap: "wrap", gap: "0.75rem", alignItems: "center", scrollMarginTop: "3.5rem" }}>
           <span style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: "0.68rem", color: "var(--text-muted)", textTransform: "uppercase", letterSpacing: "0.08em", marginRight: "0.25rem" }}>Clients &amp; Labs</span>
           {CLIENTS.map((c) => (
             <a key={c.name} href={c.href} target="_blank" rel="noopener noreferrer" className="tag">{c.name}</a>
@@ -593,6 +623,15 @@ export default function HomePage() {
                       <span style={{ fontSize: "0.75rem", color: "var(--text-muted)" }}> · <span>{exp.location}</span></span>
                     )}
                   </div>
+                  {exp.links && (
+                    <div style={{ display: "flex", flexWrap: "wrap", gap: "0.5rem", marginTop: "0.25rem", marginBottom: "0.25rem" }}>
+                      {exp.links.map((l) => (
+                        <a key={l.label} href={l.href} target="_blank" rel="noopener noreferrer" style={{ fontSize: "0.75rem", color: "var(--link)", textDecoration: "none" }}>
+                          {l.label} <ExternalIcon />
+                        </a>
+                      ))}
+                    </div>
+                  )}
                   {exp.subItems && (
                     <div style={{ marginBottom: "0.5rem", marginTop: "0.25rem", display: "flex", flexDirection: "column", gap: "0.3rem" }}>
                       {exp.subItems.map((sub, j) => (
@@ -610,6 +649,19 @@ export default function HomePage() {
                           )}
                           <span style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: "0.68rem", color: "var(--text-muted)" }}>{sub.period}</span>
                         </div>
+                      ))}
+                    </div>
+                  )}
+                  {exp.recognition && (
+                    <div style={{ fontSize: "0.75rem", color: "var(--text-muted)", marginBottom: "0.3rem" }}>
+                      Recognized by:{" "}
+                      {exp.recognition.map((r, i) => (
+                        <span key={i}>
+                          {i > 0 && <span> · </span>}
+                          <a href={r.href} target="_blank" rel="noopener noreferrer" style={{ color: "var(--link)", textDecoration: "none" }}>
+                            {r.label}
+                          </a>
+                        </span>
                       ))}
                     </div>
                   )}
@@ -652,7 +704,7 @@ export default function HomePage() {
         {/* ─── Projects ─── */}
         <SectionWrapper id="projects">
           <h2 className="section-heading">Projects</h2>
-          <p className="section-sub">Things I've built — shipped, open, and experimental.</p>
+          <p className="section-sub">Things I've built, shipped, and open-sourced.</p>
           <div>
             {PROJECTS.map((p, i) => (
               <div key={i} className="project-card">
@@ -681,7 +733,19 @@ export default function HomePage() {
                 )}
                 {p.recognition && (
                   <div style={{ fontSize: "0.75rem", color: "var(--text-muted)", marginBottom: "0.4rem" }}>
-                    Recognized by: {p.recognition.join(" · ")}
+                    Recognized by:{" "}
+                    {p.recognition.map((r, i) => (
+                      <span key={i}>
+                        {i > 0 && <span> · </span>}
+                        {typeof r === "string" ? (
+                          r
+                        ) : (
+                          <a href={r.href} target="_blank" rel="noopener noreferrer" style={{ color: "var(--link)", textDecoration: "none" }}>
+                            {r.label} <ExternalIcon />
+                          </a>
+                        )}
+                      </span>
+                    ))}
                   </div>
                 )}
                 {p.award && (
@@ -699,7 +763,7 @@ export default function HomePage() {
           </div>
           <div style={{ marginTop: "1.25rem" }}>
             <a href="https://github.com/kintsugi-programmer" target="_blank" rel="noopener noreferrer" className="social-btn" id="view-all-projects">
-              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                 <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
               </svg>
               All Projects on GitHub
@@ -735,7 +799,7 @@ export default function HomePage() {
               className="social-btn"
               style={{ padding: "0.75rem 1.5rem", fontSize: "0.9375rem" }}
             >
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                 <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
                 <polyline points="22,6 12,13 2,6" />
               </svg>
@@ -753,7 +817,7 @@ export default function HomePage() {
 
           <div style={{ display: "flex", flexDirection: "column", gap: "0.75rem", marginBottom: "2rem" }}>
             <div style={{ display: "flex", alignItems: "center", gap: "0.75rem" }}>
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--text-muted)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--text-muted)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                 <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7" />
                 <rect x="2" y="4" width="20" height="16" rx="2" />
               </svg>
@@ -762,7 +826,7 @@ export default function HomePage() {
               </a>
             </div>
             <div style={{ display: "flex", alignItems: "center", gap: "0.75rem" }}>
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--text-muted)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--text-muted)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                 <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
               </svg>
               <a href="tel:+918076218828" className="underline-hover" style={{ fontSize: "0.9rem", color: "var(--text-secondary)" }}>
@@ -770,7 +834,7 @@ export default function HomePage() {
               </a>
             </div>
             <div style={{ display: "flex", alignItems: "center", gap: "0.75rem" }}>
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--text-muted)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--text-muted)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                 <circle cx="12" cy="12" r="10" />
                 <line x1="2" y1="12" x2="22" y2="12" />
                 <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
@@ -780,7 +844,7 @@ export default function HomePage() {
               </a>
             </div>
             <div style={{ display: "flex", alignItems: "center", gap: "0.75rem" }}>
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--text-muted)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--text-muted)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                 <path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" />
                 <circle cx="12" cy="10" r="3" />
               </svg>
@@ -803,8 +867,8 @@ export default function HomePage() {
         <footer
           style={{
             borderTop: "1px solid var(--border)",
-            padding: "2rem 0",
-            marginTop: "1rem",
+            padding: "2.5rem 0",
+            marginTop: 0,
             display: "flex",
             alignItems: "center",
             justifyContent: "space-between",
