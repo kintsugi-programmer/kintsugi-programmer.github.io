@@ -464,7 +464,7 @@ export default function HomePage() {
               Product Engineer with 3+ years building scalable systems.
               <strong> Chief Product Engineer at{" "}
               <a href="https://easeclaim.com" target="_blank" rel="noopener noreferrer" className="underline-hover">Metagates Innovation</a></strong>,
-              architecting HealthTech SaaS platforms, ABDM API integrations, and clinical systems for enterprise deployment.
+              architecting HealthTech SaaS platforms, clinical systems for enterprise deployment.
               Previously built production-grade platforms for{" "}
               <a href="https://www.aiims.edu/" target="_blank" rel="noopener noreferrer" className="underline-hover">AIIMS Delhi</a>,{" "}
               <a href="https://hcd.iiitd.ac.in/" target="_blank" rel="noopener noreferrer" className="underline-hover">IIIT Delhi</a>,{" "}
