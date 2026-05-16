@@ -107,7 +107,6 @@ const EXPERIENCE = [
     period: "Nov 2024 – Jan 2025",
     title: "Web Developer",
     org: "C S Bhatiya & Associates",
-    
     link: "https://www.csbhatiya.com",
     expLetter: "https://drive.google.com/file/d/1ERZEwunqZLcGdk9Fz-A9g0KW0qIyfU5l/view",
     location: "Pune, Maharashtra, Part-time",
@@ -352,14 +351,19 @@ export default function HomePage() {
         <section
           id="about"
           style={{
-            paddingTop: "4.5rem",
-            paddingBottom: "3rem",
-            display: "grid",
-            gridTemplateColumns: "1fr auto",
-            gap: "2rem",
-            alignItems: "start",
+            paddingTop: "4rem",
+            paddingBottom: "2rem",
           }}
         >
+          <div
+            style={{
+              display: "grid",
+              gridTemplateColumns: "1fr auto",
+              gap: "2rem",
+              alignItems: "start",
+            }}
+            id="hero-grid"
+          >
           <div>
             <p
               style={{
@@ -401,17 +405,15 @@ export default function HomePage() {
             </p>
 
             <p style={{ fontSize: "0.9375rem", color: "var(--text-secondary)", lineHeight: 1.8, marginBottom: "0.9rem", maxWidth: 540 }}>
-              Product Engineer with 3+ years building scalable systems.{" "}
-              <strong>Chief Product Engineer at{" "}
+              Product Engineer with 3+ years building scalable systems.
+              <strong> Chief Product Engineer at{" "}
               <a href="https://easeclaim.com" target="_blank" rel="noopener noreferrer" className="underline-hover">Metagates Innovation</a></strong>,
               architecting HealthTech SaaS platforms, ABDM API integrations, and clinical systems for enterprise deployment.
               Previously built production-grade platforms for{" "}
               <a href="https://www.aiims.edu/" target="_blank" rel="noopener noreferrer" className="underline-hover">AIIMS Delhi</a>,{" "}
-              <a href="https://hcd.iiitd.ac.in/" target="_blank" rel="noopener noreferrer" className="underline-hover">IIIT Delhi</a> {" "}
-
-               and research labs.  <a href="http://delhistartupyuvafestival.in" target="_blank" rel="noopener noreferrer" className="underline-hover">Top 100 Startups at DSYF 2026</a>.{" "}
-
-              
+              <a href="https://hcd.iiitd.ac.in/" target="_blank" rel="noopener noreferrer" className="underline-hover">IIIT Delhi</a>,{" "}
+              and research labs.{" "}
+              <a href="http://delhistartupyuvafestival.in" target="_blank" rel="noopener noreferrer" className="underline-hover">Top 100 Products in India under Delhi SYF 2026</a>.
             </p>
 
             <p style={{ fontSize: "0.9375rem", color: "var(--text-secondary)", lineHeight: 1.8, marginBottom: "1.75rem", maxWidth: 540 }}>
@@ -439,6 +441,7 @@ export default function HomePage() {
 
           {/* Profile picture */}
           <div
+            id="photo-monogram"
             style={{
               width: 112,
               height: 112,
@@ -456,6 +459,7 @@ export default function HomePage() {
               height={112}
               style={{ objectFit: "cover", width: "100%", height: "100%" }}
             />
+          </div>
           </div>
         </section>
 
@@ -475,7 +479,6 @@ export default function HomePage() {
                 className="entry"
                 style={{
                   display: "grid",
-                  gridTemplateColumns: "5.5rem 1fr",
                   gap: "0.75rem",
                   padding: "0.65rem 0.75rem",
                   borderRadius: "4px",
@@ -587,7 +590,7 @@ export default function HomePage() {
                       </a>
                     )}
                     {exp.location && (
-                      <span style={{ fontSize: "0.75rem", color: "var(--text-muted)" }}> · <span className="">{exp.location}</span></span>
+                      <span style={{ fontSize: "0.75rem", color: "var(--text-muted)" }}> · <span>{exp.location}</span></span>
                     )}
                   </div>
                   {exp.subItems && (
@@ -648,7 +651,7 @@ export default function HomePage() {
 
         {/* ─── Projects ─── */}
         <SectionWrapper id="projects">
-          <h2 className="section-heading">Hobby Projects</h2>
+          <h2 className="section-heading">Projects</h2>
           <p className="section-sub">Things I've built — shipped, open, and experimental.</p>
           <div>
             {PROJECTS.map((p, i) => (
@@ -708,7 +711,16 @@ export default function HomePage() {
 
         {/* ─── Newsletter ─── */}
         <SectionWrapper id="newsletter">
-          <h2 className="section-heading">Coding-Is-Meditation Newsletter</h2>
+          <div style={{ display: "flex", alignItems: "center", gap: "0.75rem", marginBottom: "0.5rem" }}>
+            <Image
+              src="/newsletter.png"
+              alt="Newsletter"
+              width={40}
+              height={40}
+              style={{ borderRadius: "50%", objectFit: "cover", flexShrink: 0 }}
+            />
+            <h2 className="section-heading" style={{ marginBottom: 0 }}>Coding-Is-Meditation Newsletter</h2>
+          </div>
           <p className="section-sub" style={{ fontSize: "1rem", color: "var(--text-primary)", fontWeight: 500, marginBottom: "0.75rem" }}>
             Read by Thousands of Engineers
           </p>
