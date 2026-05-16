@@ -47,15 +47,15 @@ const SOCIAL = [
       </svg>
     ),
   },
-  {
-    label: "Codeforces",
-    href: "https://codeforces.com/profile/kintsugi-programmer",
-    icon: (
-      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-        <polyline points="22 12 18 12 15 21 9 3 6 12 2 12" />
-      </svg>
-    ),
-  },
+  // {
+  //   label: "Codeforces",
+  //   href: "https://codeforces.com/profile/kintsugi-programmer",
+  //   icon: (
+  //     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+  //       <polyline points="22 12 18 12 15 21 9 3 6 12 2 12" />
+  //     </svg>
+  //   ),
+  // },
   {
     label: "CV / Résumé",
     href: "https://drive.google.com/file/d/1yscf8O8ERbVmCnqiKwkJJrBYZ3do-Sor/view",
@@ -438,6 +438,28 @@ export default function HomePage() {
               chief product engineer · polymath developer · building HealthTech SaaS.
             </p>
 
+            {/* Mobile profile picture */}
+            <div
+              id="photo-monogram-mobile"
+              style={{
+                width: 108,
+                height: 108,
+                borderRadius: "50%",
+                overflow: "hidden",
+                border: "2px solid var(--border)",
+                marginBottom: "1.25rem",
+              }}
+            >
+              <Image
+                src="/profile.webp"
+                alt="Siddhant Bali"
+                width={108}
+                height={108}
+                priority
+                style={{ objectFit: "cover", width: "100%", height: "100%" }}
+              />
+            </div>
+
             <p style={{ fontSize: "0.9375rem", color: "var(--text-secondary)", lineHeight: 1.8, marginBottom: "0.9rem", maxWidth: 540 }}>
               Product Engineer with 3+ years building scalable systems.
               <strong> Chief Product Engineer at{" "}
@@ -477,8 +499,8 @@ export default function HomePage() {
           <div
             id="photo-monogram"
             style={{
-              width: 112,
-              height: 112,
+              width: 128,
+              height: 128,
               borderRadius: "50%",
               overflow: "hidden",
               border: "2px solid var(--border)",
@@ -489,8 +511,8 @@ export default function HomePage() {
             <Image
               src="/profile.webp"
               alt="Siddhant Bali"
-              width={112}
-              height={112}
+              width={128}
+              height={128}
               priority
               style={{ objectFit: "cover", width: "100%", height: "100%" }}
             />
@@ -894,11 +916,13 @@ export default function HomePage() {
         @media (max-width: 600px) {
           #hero-grid { grid-template-columns: 1fr !important; }
           #photo-monogram { display: none !important; }
+          #photo-monogram-mobile { display: block !important; }
           #hamburger-btn { display: block !important; }
           .desktop-nav { display: none !important; }
         }
         @media (min-width: 601px) {
           .mobile-menu { display: none !important; }
+          #photo-monogram-mobile { display: none !important; }
         }
       `}</style>
     </div>
