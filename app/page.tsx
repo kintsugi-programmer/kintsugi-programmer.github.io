@@ -377,7 +377,7 @@ export default function HomePage() {
                 marginBottom: "0.75rem",
               }}
             >
-              IIIT Delhi · CSD B.Tech · Dean's List Awardee · Class of 2026
+              Chief Product Engineer @ Metagates Innovation · IIIT Delhi CSD'26 · Dean's List
             </p>
 
             <h1
@@ -390,7 +390,7 @@ export default function HomePage() {
                 letterSpacing: "-0.02em",
               }}
             >
-              Hey, I'm Siddhant.
+              Siddhant Bali
             </h1>
 
             <p
@@ -403,21 +403,26 @@ export default function HomePage() {
                 lineHeight: 1.5,
               }}
             >
-              builder of platforms · full-stack engineer · kintsugi programmer.
+              chief product engineer · polymath developer · building HealthTech SaaS.
             </p>
 
             <p style={{ fontSize: "0.9375rem", color: "var(--text-secondary)", lineHeight: 1.8, marginBottom: "0.9rem", maxWidth: 540 }}>
-              I'm a Computer Science & Design student at{" "}
-              <a href="https://www.iiitd.ac.in" target="_blank" rel="noopener noreferrer" className="underline-hover">IIIT Delhi</a>,
-              graduating in 2026. My work lives at the intersection of full-stack engineering, human-centered design, and systems research.
+              Product Engineer with 3+ years building scalable systems.{" "}
+              <strong>Chief Product Engineer at{" "}
+              <a href="https://easeclaim.com" target="_blank" rel="noopener noreferrer" className="underline-hover">Metagates Innovation</a></strong>,
+              architecting HealthTech SaaS platforms, ABDM API integrations, and clinical systems for enterprise deployment.
+              Previously built production-grade platforms for{" "}
+              <a href="https://www.aiims.edu/" target="_blank" rel="noopener noreferrer" className="underline-hover">AIIMS Delhi</a>,{" "}
+              <a href="https://hcd.iiitd.ac.in/" target="_blank" rel="noopener noreferrer" className="underline-hover">IIIT Delhi</a> {" "}
+
+               and research labs.  <a href="http://delhistartupyuvafestival.in" target="_blank" rel="noopener noreferrer" className="underline-hover">Top 100 Startups at DSYF 2026</a>.{" "}
+
+              
             </p>
 
             <p style={{ fontSize: "0.9375rem", color: "var(--text-secondary)", lineHeight: 1.8, marginBottom: "1.75rem", maxWidth: 540 }}>
-              I've built platforms for{" "}
-              <a href="https://www.aiims.edu/" target="_blank" rel="noopener noreferrer" className="underline-hover">AIIMS Delhi</a>,{" "}
-              <a href="https://hcd.iiitd.ac.in/" target="_blank" rel="noopener noreferrer" className="underline-hover">IIIT Delhi's HCD Dept.</a>, and several
-              research labs — shipping production-grade web infrastructure, design systems, and CLI tools.
-              Recognized by IIITD, IGDTUW, and Mercedes Benz at Delhi SYF 2026.
+              B.Tech in Computer Science & Design at IIIT Delhi (Class of 2026). 
+              I enjoy building technology that becomes infrastructure, not just applications.
             </p>
 
             {/* Social buttons */}
