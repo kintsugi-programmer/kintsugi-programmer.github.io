@@ -73,9 +73,18 @@ const SOCIAL = [
 
 const EXPERIENCE = [
   {
+    period: "Mar 2026 – Present",
+    title: "Chief Product Engineer",
+    org: "Metagates Innovation Pvt. Ltd.",
+    location: "South Delhi, Delhi, Full-time",
+    link: "https://easeclaim.com",
+    desc: "Leading product engineering for Healthcare Information Technology (HIT) solutions. Architecting enterprise-grade platforms and driving full-stack product development from design through deployment.",
+  },
+  {
     period: "Jan 2025 – Dec 2025",
     title: "Undergraduate Researcher",
     org: "MI Lab, IIIT Delhi (in collaboration with ICMR & AIIMS New Delhi)",
+    location: "South Delhi, Delhi, Part-time",
     link: "https://drive.google.com/file/d/1xWXXTdRHHHUULKrngQsqZNJ4AdFiQBNE/view",
     linkLabel: "Research Presentation",
     desc: "Built FMT Hub, a cloud-based RBAC clinical data platform for access-controlled submissions, video uploads, multi-center validation across 6 hospitals, reducing bias and eliminating manual adjudication. Implemented anonymized center identifiers and automated email workflows using Google AppSheet to securely manage 800+ patient records.",
@@ -83,6 +92,7 @@ const EXPERIENCE = [
   {
     period: "Apr 2024 – Jul 2025",
     title: "Web Developer & Part-Time Intern",
+    location: "South Delhi, Delhi, Part-time",
     org: "IIIT Delhi — Multiple Departments",
     subItems: [
       { title: "IIC", link: "https://ecell.iiitd.edu.in/", expLetter: "https://drive.google.com/file/d/15J8h-KHd-D_vZ8FEkdgwQNcVEaaCNLBa/view", period: "Mar 2025 – Jul 2025" },
@@ -97,8 +107,10 @@ const EXPERIENCE = [
     period: "Nov 2024 – Jan 2025",
     title: "Web Developer",
     org: "C S Bhatiya & Associates",
+    
     link: "https://www.csbhatiya.com",
     expLetter: "https://drive.google.com/file/d/1ERZEwunqZLcGdk9Fz-A9g0KW0qIyfU5l/view",
+    location: "Pune, Maharashtra, Part-time",
     desc: "Led development and deployment of a high-performance, SEO-optimized website, achieving 90+ Lighthouse scores through performance optimization, DNS configuration, mail service integration and security patching.",
   },
 ];
@@ -157,6 +169,10 @@ const PROJECTS = [
 
 const VIDEOS = [
   {
+    title: "The \"Digital Ultron\" Story No One Confirmed | Claude Mythos & Glasswing | Unfiltered | English",
+    src: "https://www.youtube.com/embed/oiAAvy0s5qs?si=4CUhUMRtx3k1Ks8",
+  },
+  {
     title: "How to Have Great Project Ideas as a Developer | Unfiltered | Hinglish",
     src: "https://www.youtube.com/embed/ynHBEfSPngo?feature=oembed",
   },
@@ -167,56 +183,21 @@ const VIDEOS = [
 ];
 
 const WRITING = [
-  {
-    date: "2024",
-    title: "How to Have Great Project Ideas as a Developer? (A Realistic Guide)",
-    href: "https://www.linkedin.com/pulse/how-have-great-project-ideas-developer-realistic-guide-siddhant-bali-bv6vc/",
-  },
-  {
-    date: "2024",
-    title: "Why Most Engineers Don't Actually Love Coding",
-    href: "https://www.linkedin.com/pulse/why-most-engineers-dont-actually-love-coding-siddhant-bali-woipc/",
-  },
-  {
-    date: "2024",
-    title: "Comprehensive Guide to Booting Artix on a UEFI-Enabled Virtual Machine",
-    href: "https://www.linkedin.com/pulse/comprehensive-guide-booting-artix-uefi-enabled-virtual-siddhant-bali-u8jcc/",
-  },
-  {
-    date: "2024",
-    title: "Compiling and Installing a Custom Kernel on Arch Linux",
-    href: "https://www.linkedin.com/pulse/compiling-installing-custom-kernel-arch-linux-siddhant-bali-mkh5e/",
-  },
-  {
-    date: "2024",
-    title: "The Ultimate PC Emergency Toolkit — MediCat USB Guide",
-    href: "https://www.linkedin.com/pulse/ultimate-pc-emg-toolkit-kit-medicat-usb-siddhant-bali-efumc/",
-  },
-  {
-    date: "2024",
-    title: "Ani-CLI — A Command-Line Interface for Anime Enthusiasts",
-    href: "https://www.linkedin.com/pulse/ani-cli-command-line-interface-anime-enthusiasts-siddhant-bali-13bzc/",
-  },
-  {
-    date: "2024",
-    title: "TLDR — Say Goodbye to Confusing Man Pages",
-    href: "https://www.linkedin.com/pulse/tldr-say-goodbye-confusing-man-pages-siddhant-bali-8wedc/",
-  },
-  {
-    date: "2024",
-    title: "Let's Do Design Thinking — An Interactive Guide",
-    href: "https://design-thinking-kds.my.canva.site/",
-  },
-  {
-    date: "2024",
-    title: "Top Portfolio Picks — Researcher's Edition",
-    href: "https://design-thinking-kds.my.canva.site/portfolio-researcher",
-  },
-  {
-    date: "Ongoing",
-    title: "KintsugiCodes — Hashnode Blog",
-    href: "https://kintsugicodes.hashnode.dev/",
-  },
+  { date: "May 3, 2026", title: "The \"Digital Ultron\" Story No One Confirmed", href: "https://www.linkedin.com/pulse/digital-ultron-story-one-confirmed-siddhant-bali-8vyqc/" },
+  { date: "Mar 15, 2026", title: "How to Have Great Project Ideas as a Developer (Realistic Guide for 2026)", href: "https://www.linkedin.com/pulse/how-have-great-project-ideas-developer-realistic-guide-siddhant-bali-bv6vc/" },
+  { date: "Mar 5, 2026", title: "Most Engineers Don't Actually Love Coding", href: "https://www.linkedin.com/pulse/why-most-engineers-dont-actually-love-coding-siddhant-bali-woipc/" },
+  { date: "Jan 8, 2026", title: "CVE-2025-37164: A Critical Vulnerability That Should Never Exist", href: "https://codingismeditation.hashnode.dev/cve-2025-37164-a-critical-vulnerability-that-should-never-exist" },
+  { date: "Jun 23, 2025", title: "Offline LLMs in Linux | Ollama on Linux | Easy Setup Guide", href: "https://codingismeditation.hashnode.dev/llm-ollama" },
+  { date: "Sep 8, 2024", title: "Creating a Multi-Bootable USB Drive with Ventoy on Linux", href: "https://codingismeditation.hashnode.dev/ventoy" },
+  { date: "Jul 29, 2024", title: "Building Low-Interaction Honeypots for Web Security", href: "https://codingismeditation.hashnode.dev/building-low-interaction-honeypots-for-web-security" },
+  { date: "Jul 29, 2024", title: "Patterns", href: "https://codingismeditation.hashnode.dev/patterns" },
+  { date: "May 22, 2024", title: "Compiling and Installing a Custom Kernel on Arch Linux", href: "https://www.linkedin.com/pulse/compiling-installing-custom-kernel-arch-linux-siddhant-bali-mkh5e/" },
+  { date: "May 19, 2024", title: "The Ultimate PC Emergency Toolkit — MediCat USB Guide", href: "https://www.linkedin.com/pulse/ultimate-pc-emg-toolkit-kit-medicat-usb-siddhant-bali-efumc/" },
+  { date: "May 18, 2024", title: "Comprehensive Guide to Booting Artix on a UEFI-Enabled Virtual Machine", href: "https://www.linkedin.com/pulse/comprehensive-guide-booting-artix-uefi-enabled-virtual-siddhant-bali-u8jcc/" },
+  { date: "May 10, 2024", title: "Ani-CLI — A Command-Line Interface for Anime Enthusiasts", href: "https://www.linkedin.com/pulse/ani-cli-command-line-interface-anime-enthusiasts-siddhant-bali-13bzc/" },
+  { date: "May 10, 2024", title: "TLDR — Say Goodbye to Confusing Man Pages", href: "https://www.linkedin.com/pulse/tldr-say-goodbye-confusing-man-pages-siddhant-bali-8wedc/" },
+  { date: "May 10, 2024", title: "Let's Do Design Thinking — An Interactive Guide", href: "https://design-thinking-kds.my.canva.site/" },
+  { date: "May 10, 2024", title: "Top Portfolio Picks — Researcher's Edition", href: "https://design-thinking-kds.my.canva.site/portfolio-researcher" },
 ];
 
 const CLIENTS = [
@@ -235,6 +216,7 @@ const NAV = [
   { label: "Experience", href: "#experience" },
   { label: "Skills", href: "#skills" },
   { label: "Projects", href: "#projects" },
+  { label: "Articles", href: "#articles" },
   { label: "Newsletter", href: "#newsletter" },
   { label: "Connect", href: "#connect" },
 ];
@@ -496,34 +478,36 @@ export default function HomePage() {
                   </div>
                   <div className="exp-org">
                     {exp.org}
-                    {exp.link && (
-                      <a href={exp.link} target="_blank" rel="noopener noreferrer" style={{ fontSize: "0.75rem", color: "var(--link)", marginLeft: "0.4rem" }}>
-                        <ExternalIcon />
+                    {exp.linkLabel && (
+                      <a href={exp.link} target="_blank" rel="noopener noreferrer" className="tag" style={{ marginLeft: "0.5rem", borderColor: "var(--accent)", color: "var(--accent)", background: "var(--accent-light)" }}>
+                        {exp.linkLabel}
                       </a>
                     )}
                     {exp.expLetter && (
-                      <a href={exp.expLetter} target="_blank" rel="noopener noreferrer" style={{ fontSize: "0.75rem", color: "var(--text-muted)", marginLeft: "0.4rem" }}>
+                      <a href={exp.expLetter} target="_blank" rel="noopener noreferrer" className="tag" style={{ marginLeft: "0.5rem", borderColor: "var(--accent)", color: "var(--accent)", background: "var(--accent-light)" }}>
                         Exp. Letter
                       </a>
                     )}
+                    {exp.location && (
+                      <span style={{ fontSize: "0.75rem", color: "var(--text-muted)" }}> · <span className="">{exp.location}</span></span>
+                    )}
                   </div>
                   {exp.subItems && (
-                    <div style={{ marginBottom: "0.5rem", fontSize: "0.8rem" }}>
+                    <div style={{ marginBottom: "0.5rem", marginTop: "0.25rem", display: "flex", flexDirection: "column", gap: "0.3rem" }}>
                       {exp.subItems.map((sub, j) => (
-                        <div key={j} style={{ display: "flex", alignItems: "center", gap: "0.5rem", marginBottom: "0.25rem" }}>
-                          <span style={{ color: "var(--text-muted)" }}>•</span>
-                          <span>{sub.title}</span>
+                        <div key={j} style={{ display: "flex", alignItems: "center", gap: "0.35rem", flexWrap: "wrap" }}>
+                          <span style={{ color: "var(--text-primary)", fontSize: "0.8125rem" }}>{sub.title}</span>
                           {sub.link && (
-                            <a href={sub.link} target="_blank" rel="noopener noreferrer" style={{ fontSize: "0.7rem", color: "var(--link)" }}>
-                              Production <ExternalIcon />
+                            <a href={sub.link} target="_blank" rel="noopener noreferrer" className="tag" style={{ borderColor: "var(--accent)", color: "var(--accent)", background: "var(--accent-light)" }}>
+                              Production
                             </a>
                           )}
                           {sub.expLetter && (
-                            <a href={sub.expLetter} target="_blank" rel="noopener noreferrer" style={{ fontSize: "0.7rem", color: "var(--text-muted)" }}>
+                            <a href={sub.expLetter} target="_blank" rel="noopener noreferrer" className="tag" style={{ borderColor: "var(--accent)", color: "var(--accent)", background: "var(--accent-light)" }}>
                               Exp. Letter
                             </a>
                           )}
-                          <span style={{ color: "var(--text-muted)" }}>· {sub.period}</span>
+                          <span style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: "0.68rem", color: "var(--text-muted)" }}>{sub.period}</span>
                         </div>
                       ))}
                     </div>
@@ -642,23 +626,66 @@ export default function HomePage() {
           </div>
         </SectionWrapper>
 
-        <hr />
-
-        {/* ─── Writing ─── */}
-        <SectionWrapper id="writing">
-          <h2 className="section-heading">Writing & Documentation</h2>
-          <p className="section-sub">Articles, guides, and design research I've published.</p>
+        {/* ─── Articles ─── */}
+        <SectionWrapper id="articles">
+          <h2 className="section-heading">Articles</h2>
+          <p className="section-sub">Thoughts on engineering, security, Linux, and the craft of building software.</p>
           <div>
-            {WRITING.map((w, i) => (
-              <div key={i} className="entry">
-                <span className="entry-date">{w.date}</span>
-                <span className="entry-title">
-                  <a href={w.href} target="_blank" rel="noopener noreferrer">
-                    {w.title}
-                    <ExternalIcon />
-                  </a>
+            {[...WRITING].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()).map((w, i) => (
+              <a
+                key={i}
+                href={w.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="entry"
+                style={{
+                  display: "grid",
+                  gridTemplateColumns: "5.5rem 1fr",
+                  gap: "0.75rem",
+                  padding: "0.65rem 0.75rem",
+                  borderRadius: "4px",
+                  textDecoration: "none",
+                  transition: "background 0.2s, box-shadow 0.2s",
+                  marginBottom: "1px",
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.background = "var(--surface)";
+                  e.currentTarget.style.boxShadow = "0 1px 4px rgba(0,0,0,0.04)";
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.background = "transparent";
+                  e.currentTarget.style.boxShadow = "none";
+                }}
+              >
+                <span
+                  style={{
+                    fontFamily: "'JetBrains Mono', monospace",
+                    fontSize: "0.68rem",
+                    color: "var(--text-muted)",
+                    paddingTop: "2px",
+                    whiteSpace: "nowrap",
+                  }}
+                >
+                  {w.date}
                 </span>
-              </div>
+                <span
+                  style={{
+                    fontSize: "0.9375rem",
+                    color: "var(--text-primary)",
+                    lineHeight: 1.5,
+                    transition: "color 0.2s",
+                  }}
+                  onMouseEnter={(e) => { e.currentTarget.style.color = "var(--link)"; }}
+                  onMouseLeave={(e) => { e.currentTarget.style.color = "var(--text-primary)"; }}
+                >
+                  {w.title}
+                  <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ display: "inline", marginLeft: 4, opacity: 0.4, verticalAlign: "middle" }}>
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                    <polyline points="15 3 21 3 21 9" />
+                    <line x1="10" y1="14" x2="21" y2="3" />
+                  </svg>
+                </span>
+              </a>
             ))}
           </div>
         </SectionWrapper>
