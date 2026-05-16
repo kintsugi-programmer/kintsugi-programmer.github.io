@@ -117,6 +117,17 @@ const EXPERIENCE = [
 
 const PROJECTS = [
   {
+    title: "Osho's Ashtavakra Gita Project",
+    desc: "A structured, AI-ready dataset of Ashtavakra Gita teachings based on the discourses of Osho. Features sentence-aware chunking, Hindi discourse processing, bilingual translation pipeline, and semantic search with RAG capabilities.",
+    tags: ["Python", "NLP", "JSON", "Kaggle", "Semantic Search", "RAG"],
+    link: "https://oshogita.sbali.tech",
+    links: [
+      { label: "Live", href: "https://oshogita.sbali.tech" },
+      { label: "Kaggle Dataset", href: "https://www.kaggle.com/datasets/siddhantbaliwork/osho-ashtavakra-gita-nlp-dataset" },
+      { label: "Source Code", href: "https://github.com/kintsugi-programmer/osho-ashtavakra-gita-db" },
+    ],
+  },
+  {
     title: "TelemetryTradeAI",
     desc: "AI-powered crypto intelligence platform featuring a streaming RAG chatbot, real-time market data integration and OCR-based portfolio analysis.",
     tags: ["Bun", "Next.js", "TailwindCSS", "ShadCN", "Clerk", "Groq AI", "CoinGecko API", "Tesseract.js"],
