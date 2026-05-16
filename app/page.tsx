@@ -224,10 +224,11 @@ const CLIENTS = [
 
 const NAV = [
   { label: "About", href: "#about" },
+  { label: "Articles", href: "#articles" },
+  { label: "Videos", href: "#videos" },
   { label: "Experience", href: "#experience" },
   { label: "Skills", href: "#skills" },
   { label: "Projects", href: "#projects" },
-  { label: "Articles", href: "#articles" },
   { label: "Newsletter", href: "#newsletter" },
   { label: "Connect", href: "#connect" },
 ];
@@ -460,6 +461,92 @@ export default function HomePage() {
 
         <hr />
 
+        {/* ─── Articles ─── */}
+        <SectionWrapper id="articles">
+          <h2 className="section-heading">Articles</h2>
+          <p className="section-sub">Thoughts on engineering, security, Linux, and the craft of building software.</p>
+          <div>
+            {[...WRITING].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()).map((w, i) => (
+              <a
+                key={i}
+                href={w.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="entry"
+                style={{
+                  display: "grid",
+                  gridTemplateColumns: "5.5rem 1fr",
+                  gap: "0.75rem",
+                  padding: "0.65rem 0.75rem",
+                  borderRadius: "4px",
+                  textDecoration: "none",
+                  transition: "background 0.2s, box-shadow 0.2s",
+                  marginBottom: "1px",
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.background = "var(--surface)";
+                  e.currentTarget.style.boxShadow = "0 1px 4px rgba(0,0,0,0.04)";
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.background = "transparent";
+                  e.currentTarget.style.boxShadow = "none";
+                }}
+              >
+                <span
+                  style={{
+                    fontFamily: "'JetBrains Mono', monospace",
+                    fontSize: "0.68rem",
+                    color: "var(--text-muted)",
+                    paddingTop: "2px",
+                    whiteSpace: "nowrap",
+                  }}
+                >
+                  {w.date}
+                </span>
+                <span
+                  style={{
+                    fontSize: "0.9375rem",
+                    color: "var(--text-primary)",
+                    lineHeight: 1.5,
+                    transition: "color 0.2s",
+                  }}
+                  onMouseEnter={(e) => { e.currentTarget.style.color = "var(--link)"; }}
+                  onMouseLeave={(e) => { e.currentTarget.style.color = "var(--text-primary)"; }}
+                >
+                  {w.title}
+                  <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ display: "inline", marginLeft: 4, opacity: 0.4, verticalAlign: "middle" }}>
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                    <polyline points="15 3 21 3 21 9" />
+                    <line x1="10" y1="14" x2="21" y2="3" />
+                  </svg>
+                </span>
+              </a>
+            ))}
+          </div>
+        </SectionWrapper>
+
+        <hr />
+
+        {/* ─── Videos ─── */}
+        <SectionWrapper id="videos">
+          <h2 className="section-heading">Videos</h2>
+          <p className="section-sub">Unfiltered thoughts on software engineering and career.</p>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", gap: "1.5rem" }}>
+            {VIDEOS.map((v, i) => (
+              <div key={i} className="video-card">
+                <div style={{ position: "relative", paddingBottom: "56.25%", height: 0, overflow: "hidden" }}>
+                  <iframe src={v.src} title={v.title} frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%" }}></iframe>
+                </div>
+                <div style={{ padding: "1rem" }}>
+                  <h3 style={{ fontSize: "0.9375rem", color: "var(--text-primary)", fontWeight: 500, lineHeight: 1.4 }}>{v.title}</h3>
+                </div>
+              </div>
+            ))}
+          </div>
+        </SectionWrapper>
+
+        <hr />
+
         {/* ─── Clients strip ─── */}
         <div style={{ padding: "1.5rem 0", display: "flex", flexWrap: "wrap", gap: "0.75rem", alignItems: "center" }}>
           <span style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: "0.68rem", color: "var(--text-muted)", textTransform: "uppercase", letterSpacing: "0.08em", marginRight: "0.25rem" }}>Clients &amp; Labs</span>
@@ -561,7 +648,7 @@ export default function HomePage() {
 
         {/* ─── Projects ─── */}
         <SectionWrapper id="projects">
-          <h2 className="section-heading">Projects</h2>
+          <h2 className="section-heading">Hobby Projects</h2>
           <p className="section-sub">Things I've built — shipped, open, and experimental.</p>
           <div>
             {PROJECTS.map((p, i) => (
@@ -619,93 +706,9 @@ export default function HomePage() {
 
         <hr />
 
-        {/* ─── Videos ─── */}
-        <SectionWrapper id="videos">
-          <h2 className="section-heading">Videos</h2>
-          <p className="section-sub">Unfiltered thoughts on software engineering and career.</p>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", gap: "1.5rem" }}>
-            {VIDEOS.map((v, i) => (
-              <div key={i} className="video-card">
-                <div style={{ position: "relative", paddingBottom: "56.25%", height: 0, overflow: "hidden" }}>
-                  <iframe src={v.src} title={v.title} frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%" }}></iframe>
-                </div>
-                <div style={{ padding: "1rem" }}>
-                  <h3 style={{ fontSize: "0.9375rem", color: "var(--text-primary)", fontWeight: 500, lineHeight: 1.4 }}>{v.title}</h3>
-                </div>
-              </div>
-            ))}
-          </div>
-        </SectionWrapper>
-
-        {/* ─── Articles ─── */}
-        <SectionWrapper id="articles">
-          <h2 className="section-heading">Articles</h2>
-          <p className="section-sub">Thoughts on engineering, security, Linux, and the craft of building software.</p>
-          <div>
-            {[...WRITING].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()).map((w, i) => (
-              <a
-                key={i}
-                href={w.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="entry"
-                style={{
-                  display: "grid",
-                  gridTemplateColumns: "5.5rem 1fr",
-                  gap: "0.75rem",
-                  padding: "0.65rem 0.75rem",
-                  borderRadius: "4px",
-                  textDecoration: "none",
-                  transition: "background 0.2s, box-shadow 0.2s",
-                  marginBottom: "1px",
-                }}
-                onMouseEnter={(e) => {
-                  e.currentTarget.style.background = "var(--surface)";
-                  e.currentTarget.style.boxShadow = "0 1px 4px rgba(0,0,0,0.04)";
-                }}
-                onMouseLeave={(e) => {
-                  e.currentTarget.style.background = "transparent";
-                  e.currentTarget.style.boxShadow = "none";
-                }}
-              >
-                <span
-                  style={{
-                    fontFamily: "'JetBrains Mono', monospace",
-                    fontSize: "0.68rem",
-                    color: "var(--text-muted)",
-                    paddingTop: "2px",
-                    whiteSpace: "nowrap",
-                  }}
-                >
-                  {w.date}
-                </span>
-                <span
-                  style={{
-                    fontSize: "0.9375rem",
-                    color: "var(--text-primary)",
-                    lineHeight: 1.5,
-                    transition: "color 0.2s",
-                  }}
-                  onMouseEnter={(e) => { e.currentTarget.style.color = "var(--link)"; }}
-                  onMouseLeave={(e) => { e.currentTarget.style.color = "var(--text-primary)"; }}
-                >
-                  {w.title}
-                  <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ display: "inline", marginLeft: 4, opacity: 0.4, verticalAlign: "middle" }}>
-                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
-                    <polyline points="15 3 21 3 21 9" />
-                    <line x1="10" y1="14" x2="21" y2="3" />
-                  </svg>
-                </span>
-              </a>
-            ))}
-          </div>
-        </SectionWrapper>
-
-        <hr />
-
         {/* ─── Newsletter ─── */}
         <SectionWrapper id="newsletter">
-          <h2 className="section-heading">Siddhant's Newsletter</h2>
+          <h2 className="section-heading">Coding-Is-Meditation Newsletter</h2>
           <p className="section-sub" style={{ fontSize: "1rem", color: "var(--text-primary)", fontWeight: 500, marginBottom: "0.75rem" }}>
             Read by Thousands of Engineers
           </p>
