@@ -41,3 +41,6 @@ yarn-error.log*
 next-env.d.ts
 
 /inspirations
+
+# generated at build time
+/public/og-image.png
