@@ -913,14 +913,14 @@ export default function HomePage() {
 
       {/* ── Responsive styles ── */}
       <style>{`
-        @media (max-width: 600px) {
+        @media (max-width: 640px) {
           #hero-grid { grid-template-columns: 1fr !important; }
           #photo-monogram { display: none !important; }
           #photo-monogram-mobile { display: block !important; }
           #hamburger-btn { display: block !important; }
           .desktop-nav { display: none !important; }
         }
-        @media (min-width: 601px) {
+        @media (min-width: 641px) {
           .mobile-menu { display: none !important; }
           #photo-monogram-mobile { display: none !important; }
         }
