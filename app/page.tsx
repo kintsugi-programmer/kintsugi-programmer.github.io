@@ -200,6 +200,10 @@ const PROJECTS = [
 
 const VIDEOS = [
   {
+    title: "Why AI Coding Feels Random (And How to Fix It) | SpecDrivenDev | TechCurrentAffairs | English"
+    ,src: "https://www.youtube.com/embed/lrHP3xbkRRE?si=Jtt8hr1ebszg1CnF"
+  },
+  {
     title: "The \"Digital Ultron\" Story No One Confirmed | Claude Mythos & Glasswing | Unfiltered | English",
     src: "https://www.youtube.com/embed/oiAAvy0s5qs?si=4CUhUMRtx3k1Ks8",
   },
